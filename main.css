@@ -1,0 +1,115 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: palevioletred;
+}
+
+.header {
+    color: indigo;
+    background: url("../../assets/img/color.jpg") no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding-bottom: 100px;
+}
+
+.header .navbar-nav>li>a {
+    color: indigo;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.header .navbar {
+    margin-bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    border-bottom:none;
+    background-color: transparent;
+    min-width: 300px;
+    border: none;
+}
+
+.header .hero {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+#greet {
+    color: indigo;
+    font-weight: bold;
+    font-size: 60px;
+    margin-bottom: 36px;
+    -webkit-text-stroke: 1px black;
+    font-weight: bold;
+    color: white;
+    text-shadow:
+        3px 3px 0 #000,
+      -1px -1px 0 #000,  
+       1px -1px 0 #000,
+       -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.hero h3 {
+    -webkit-text-stroke: 1px black;
+   color: white;
+   font-weight: bold;
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+
+#more {
+    
+    color: black;
+    background-color: whitesmoke;
+    opacity: 0.85;
+    border-color: black !important;
+    outline:none;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 24px;
+    padding: 18px 24px;
+    transition:0.2s background-color;
+    text-decoration: none;
+}
+
+#more:hover {
+    background-color: white;
+    opacity: 1.0;
+}
+
+#more:active {
+    transform:translateY(1px);
+}
+
+@media screen and (max-width: 767px) {
+
+    .header .navbar-default .navbar-nav .open .dropdown-menu>li>a{
+        color: #fff;
+        font-size: 16px;
+    }
+
+    .header .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover{
+        color: #ccc;
+    }
+
+    .header .navbar-collapse {
+        margin-left: 20px;
+        border-top: none;
+        box-shadow: none;
+    }
+
+    .header .hero{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .header .hero h1{
+        font-size: 42px;
+    }
+}
