@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css"/>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Infant|Pattaya|Prociono" rel="stylesheet">
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -18,17 +19,14 @@
         </nav>
         <div class="hero">
             <h1 id="greet">Hello! My name is Ekin.</h1>
-            <br><br><br>
-            <h3>Computer Science Student & Fresh Air Enthusiast</h3>
-            <br><br><br><br><br><br>
-            <button id="more" class="btn btn-primary">Learn More About Me</button>
+            <br><br><br><br>
         </div>
     </div>
     <br>
     <br>
     <br>
     <div id="content" class="container">
-        <div id="about-prof" class="container">
+        <div id="intro" class="container">
             <h1>My Story</h1>
             <div id="summ" class="container">
                 <p>I am a second-year Computer Science student at the University of Western Australia. 
@@ -40,51 +38,54 @@
                 </p>
             </div>
             <h1>What I Can Offer</h1>
-                <div id="skills" class="container">
-                    <h4>Professional Experience</h4>
+                <div id="skills" class="container">      
+                    <h2>Professional Experience</h2>
+                    <img id="nwd" src="assets/img/nwd.PNG" class="img-responsive" height="180px" width="500px">    
                     <p>I worked as a Web Development Intern at Mission Australia. I built the initial versions of the <a href="https://ekinbukulmez.github.io/NoWrongDoor/" target="_blank">No Wrong Door</a>
                         website, which allows for users to browse through help resources based on the users' age, needs, and suburb of choice. 
-                        I am still working on the website to get it ready for official testing on a Volunteer developer bases.
+                        The website is built entirely out of HTML, CSS, and JavaScript, as it was meant to be a static website.
+                        I am still working on the website to get it ready for official testing on a Volunteer developer basis.
                     </p>
-                    <h4>Technical Skills</h4>
-                    <h5>Programming Languages</h5>
+                    <br><br>
+                    <h2>Technical Skills</h2>
+                    <h3>Programming Languages</h3>
                     <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript with JQuery</li>
-                        <li>Python</li>
-                        <li>C</li>
-                        <li>C++</li>
-                        <li>Java</li>
-                        <li>SQL</li>
+                        <li id="htmlic"><i class="fab fa-html5 fa-7x"></i></li>
+                        <li id="cssic"><i class="fab fa-css3-alt fa-7x"></i></li>
+                        <li id="jsic"><i class="fab fa-js-square fa-7x"></i></li>
+                        <li id="pythic"><i class="fab fa-python fa-7x"></i></li>
+                        <li id="javaic"><i class="fab fa-java fa-7x"></i></li>
+                        <li id="cic"><img src="assets/img/c.png"></li>
+                        <li id=cpp><img src="assets/img/cpp.png"></li>
+                        <li id=cpp><img src="assets/img/sql.png"></li>
                     </ul>
-                    <h5>Frameworks</h5>
+                    <h3>Frameworks</h3>
                     <ul>
-                        <li>Bootstrap</li>
-                        <li>Django</li>
+                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> Bootstrap</li>
+                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> Django</li>
                     </ul>
-                    <h5>Software</h5>
+                    <h3>Software</h3>
                     <ul>
-                        <li>Git</li>
-                        <li>VMWare</li>
-                        <li>MySQL</li>
-                        <li>Eclipse</li>
-                        <li>Visual Studio Code</li>
-                        <li>Microsoft Office</li>
+                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> Git</li>
+                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> VMWare</li>
+                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> MySQL</li>
+                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> Eclipse</li>
+                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> Visual Studio Code</li>
+                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> Microsoft Office</li>
                     </ul>
-                    <h5>Operating Systems</h5>
+                    <h3>Operating Systems</h3>
                     <ul>
-                        <li>Microsoft Windows 10</li>
-                        <li>Linux (Ubuntu)</li>
-                        <li>macOS</li>
+                        <li id="winic"><i class="fab fa-windows fa-7x"></i></li>
+                        <li><i class="fab fa-linux fa-7x"></i></li>
+                        <li id="appic"><i class="fab fa-apple fa-7x"></i></li>
                     </ul>
-                    <h4>Interpersonal Skills</h4>
+                    <h2>Interpersonal Skills</h2>
                     <ul id="inter">
-                        <li>Teaching: I have been a programming tutor for a 12-year-old student. Since July 2018, and hence have been developing my teaching skills.</li>
-                        <li>Problem Solving: Being a Computer Science student has taught me many essential problem solving skills, most important of which is retaining patience.</li>
-                        <li>Public Speaking: While studying Business for two years, I learned essential presentation and public speaking skills through my coursework.</li>
-                        <li>Relationship Building: I worked as a Residential Advisor during my time in the US. This job required me to make sure that the students living in Residential Colleges were well-integrated into university culture through relationship-building events and activities that I organized.</li>
-                        <li>Teamwork: As a university student studying in two different countries, I was able to work in teams comprised of individuals of many different backgrounds.</li>
+                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> Teaching: I have been a programming tutor for a 12-year-old student. Since July 2018, and hence have been developing my teaching skills.</li>
+                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> Problem Solving: Being a Computer Science student has taught me many essential problem solving skills, most important of which is retaining patience.</li>
+                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> Public Speaking: While studying Business for two years, I learned essential presentation and public speaking skills through my coursework.</li>
+                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> Relationship Building: I worked as a Residential Advisor during my time in the US. This job required me to make sure that the students living in Residential Colleges were well-integrated into university culture through relationship-building events and activities that I organized.</li>
+                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> Teamwork: As a university student studying in two different countries, I was able to work in teams comprised of individuals of many different backgrounds.</li>
                     </ul>
                     <h4>For additional information, view my full resume <a href="Resume.md.html">here!</a> &hearts;</h4>
                 </div>    
@@ -93,11 +94,11 @@
         <div id="non-prof" class="container">
             <h1>What Else?</h1>
             <div id="non-prof-inner" class="container">
-            <h4>I Also Know Some Human Languages:</h4>
+            <h3>I Also Know Some Human Languages:</h3>
                     <ul>
-                        <li>Turkish as my Native Language</li>
-                        <li>Fluent English</li>
-                        <li>Intermediate French</li>
+                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> Turkish as my Native Language</li>
+                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> Fluent English</li>
+                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> Intermediate French</li>
                     </ul>
                 <br>
             </div>
