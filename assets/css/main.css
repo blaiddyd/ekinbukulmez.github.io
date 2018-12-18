@@ -63,29 +63,6 @@ body {
    
 }
 
-#more {
-    color: black;
-    background-color: whitesmoke;
-    opacity: 0.85;
-    border-color: black !important;
-    outline:none;
-    margin-right: 20px;
-    margin-top: 20px;
-    font-size: 24px;
-    padding: 18px 24px;
-    transition:0.2s background-color;
-    text-decoration: none;
-}
-
-#more:hover {
-    background-color: white;
-    opacity: 1.0;
-}
-
-#more:active {
-    transform:translateY(1px);
-}
-
 @media screen and (max-width: 767px) {
 
     .header .navbar-default .navbar-nav .open .dropdown-menu>li>a{
@@ -116,7 +93,16 @@ body {
 
 #intro h1, #non-prof h1 {
     font-family: 'Pattaya', sans-serif;
+    color: #C1666B;
 
+}
+
+#content h2 {
+    color: #731DD8;
+}
+
+#content h3 {
+    color: #48A9A6;
 }
     
 
@@ -199,6 +185,7 @@ body {
     transition-delay:.2s;
 }
 
+
 #skills p {
     padding-top: 8px;   
     padding-left: 20px; 
@@ -214,12 +201,12 @@ body {
 #skills ul li {
     float: left;
     display: block;
-    text-align: center;
     padding: 10px;
 }
 
 #skills ul, #non-prof-inner ul {
     list-style-type: none;
+    text-align: left;
 
 }
 
@@ -231,6 +218,7 @@ body {
 h4, h5 {
     font-size: 23px;
 }
-#inter p {
-    font-weight: bold;
+
+footer {
+    text-align: center;
 }
