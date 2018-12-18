@@ -116,7 +116,9 @@ body {
 
 #intro h1, #non-prof h1 {
     font-family: 'Pattaya', sans-serif;
+
 }
+    
 
 #nwd {
     float: left;
@@ -214,34 +216,6 @@ body {
     display: block;
     text-align: center;
     padding: 10px;
-}
-
-#htmlic {
-    color: red;
-}
-
-#cssic {
-    color: blue;
-}
-
-#jsic {
-    color: yellow;
-}
-
-#pythic {
-    color: navy;
-}
-
-#javaic {
-    color: orange;
-}
-
-#winic {
-    color: lightskyblue;
-}
-
-#appic {
-    color: grey;
 }
 
 #skills ul, #non-prof-inner ul {
