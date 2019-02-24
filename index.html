@@ -48,6 +48,9 @@
                                 {{ item.title }}
 
                             </v-card-title>
+                            <p class="ml-4 subheading">
+                                {{ item.date }}
+                            </p>
                             <v-card-text class="white black--text">
                                 {{ item.text }}
                             </v-card-text>
@@ -56,7 +59,7 @@
                                     <v-btn
                                         :href="item.link"
                                     >
-                                        LEARN MORE
+                                        {{ item.button }}
                                     </v-btn>
                                 </v-layout>
                             </v-card-actions>
@@ -67,12 +70,42 @@
             </div>
         </v-container>
     
-        <footer class="container-fluid" style="background-color: #731DD8;">
-            <h3>Thank you for visiting! 😊</h3>
-            <p>Feel free to checkout any of my social media links below! 💖</p>
-            <p>&copy; Style by Ekin Bukulmez 🎨</p> 
-            <p>Image overlay effect from <a href="https://miketricking.github.io/bootstrap-image-hover/" target="_blank">here 👩‍💻</a></p>
-        </footer> 
+       <v-footer
+        dark
+        height="auto"
+       >
+        <v-card
+            flat
+            tile
+            class="black--text text-xs-center flex"
+        >
+            <v-card-text>
+                <v-btn
+                    v-for="icon in icons"
+                    icon
+                    :href="icon.to"
+                    class="mx-3"
+                >
+                    <v-icon>
+                        {{ icon.img }}
+                    </v-icon>
+                
+                </v-btn>
+            </v-card-text> 
+            
+            <v-card-text>
+                Thank you so much for visiting! Feel free to check out my social media links above!
+            </v-card-text>
+
+            <v-divider></v-divider>
+
+            <v-card-text>
+                Made with 💝 by Ekin Bukulmez
+            </v-card-text>
+        </v-card>
+        
+
+       </v-footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
@@ -81,32 +114,46 @@
             el: '#app', 
             data: () => {
                 return {
+                    icons: [
+                        { img: 'fab fa-github', to: 'https://github.com/ekinbukulmez' },
+                        { img: 'fab fa-linkedin', to: 'https://www.linkedin.com/in/ekinbukulmez/' },
+                        { img: 'fas fa-envelope-square', to: 'mailto:22412569@student.uwa.edu.au' },
+                    ],
                     items: [
                         {
                             color: '#4F518C',
                             icon: 'work',
                             title: 'Software Developer at Mote Net',
+                            date: '2 January 2019 - Present',
                             text: `I am currently working at Mote Net, a Perth-based start-up that is developing smart farm technologies
-                                    for Western Australian farmers. I work as a web developer, crafting the user-friendly Mote Net dashboard, which
+                                    for Western Australian farmers. I am currently developing the user-friendly Mote Net dashboard, which
                                     displays farm for the user to utilise. `,
+                            button: 'Learn More',
                             link: 'https://mote.net.au/'
                         },
                         {
-                            color: '#907AD6',
+                            color: '#2C2A4A',
                             icon: 'computer',
                             title: 'Web Development Intern at Mission Australia',
-                            text: ``,
+                            date: '14 March 2018 - Present',
+                            text: `I worked on the early version of the No Wrong Door project, which enabled users to browse through 
+                                    non-profit resources in Western Australia based on their suburb, age, and area of need. I am currently working on a second version of the website using Vue.js
+                                    for improved perfromance.`,
+                            button: 'VERSION I',
+                            link: 'https://www.ekinbukulmez.me/NoWrongDoor'
                         },
                         {
-                            color: '#2C2A4A',
+                            color: '#907AD6',
                             icon: 'school',
+                            date: '27 February 2018 - December 2019',
                             title: 'Computer Science, BS, at University of Western Australia',
                             text: ``,
                         },
                         {
-                            color: '#DABFFF',
+                            color: '#372549',
                             icon: 'book',
                             title: 'Global Business, BS, at the University of Texas at Dallas',
+                            date: 'August 2015 - November 2017',
                             text: ``,
                         },
                         
