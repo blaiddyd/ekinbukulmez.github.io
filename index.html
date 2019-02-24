@@ -6,116 +6,114 @@
     <title>Ekin Bukulmez</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css"/>
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Infant|Pattaya|Prociono" rel="stylesheet">
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <script src="assets/js/main.js"></script>
 </head>
 <body>
-    <div class="header">
-        <nav class="navbar navbar-default">
-        </nav>
-        <div class="hero">
-            <h1 id="greet">Hello! My name is Ekin.</h1>
-            <br><br><br><br>
-        </div>
+    <div id="app">
+        <v-parallax
+            dark
+            src=".\assets\img\abstract.jpg"
+        >
+            <v-layout
+                align-center
+                column
+                justify-center
+            >
+                <h1>Hello! My Name is Ekin</h1>
+                <h4>Full-time dev, part-time parody</h4>
+                
+            </v-layout>
+        </v-parallax>
+
+        <v-container>
+            <div id="timeline">
+                <h1>My Work</h1>
+                <v-timeline align-top>
+                    <v-timeline-item
+                        v-for="item in items"
+                        :key="item.icon"
+                        :color="item.color"
+                        :icon="item.icon"
+                        fill-dot
+                    >       
+                        <v-card
+                            :color="item.color"
+                            dark
+                            hover
+                        >
+                            <v-card-title class="title">
+                                {{ item.title }}
+
+                            </v-card-title>
+                            <v-card-text class="white black--text">
+                                {{ item.text }}
+                            </v-card-text>
+                            <v-card-actions>
+                                <v-layout>
+                                    <v-btn
+                                        :href="item.link"
+                                    >
+                                        LEARN MORE
+                                    </v-btn>
+                                </v-layout>
+                            </v-card-actions>
+                        </v-card> 
+                    </v-timeline-item>
+                </v-timeline>
+
+            </div>
+        </v-container>
+    
+        <footer class="container-fluid" style="background-color: #731DD8;">
+            <h3>Thank you for visiting! 😊</h3>
+            <p>Feel free to checkout any of my social media links below! 💖</p>
+            <p>&copy; Style by Ekin Bukulmez 🎨</p> 
+            <p>Image overlay effect from <a href="https://miketricking.github.io/bootstrap-image-hover/" target="_blank">here 👩‍💻</a></p>
+        </footer> 
     </div>
-    <br>
-    <br>
-    <br>
-    <div id="content" class="container">
-        <div id="intro" class="container">
-            <h1>My Story</h1>
-            <div id="summ" class="container">
-                <p>I am a second-year Computer Science student at the University of Western Australia. 
-                I started programming in February 2018 and it has been my passion ever since.
-                Besides university classes, I spend my most of time teaching myself about the wonderful world of Web Development.
-                Before February 2018, I was an honours Global Business student at the University of Texas at Dallas in the United States.
-                I lived in the US for 6 years, going to high school for 4 years, graduating as an International Baccalaureate(IB) student. I went on to study as a university student for 2 years afterwards.
-                I was born in Ankara, Turkey and lived there for 13 years prior.
-                </p>
-            </div>
-            <hr>
-            <h1>What I Can Offer</h1>
-                <div id="skills" class="container">
-                    <h2>Professional Experience</h2>
-                    <div class="hovereffect">
-                        <img id="nwd" src="assets/img/nwd.PNG" class="img-responsive" height="600px" width="500px"> 
-                        <div class="overlay">
-                            <a class="info" href="https://github.com/ekinbukulmez/NoWrongDoor" target="_blank">Source Code</a>
-                        </div>    
-                    </div>
-                    <p>I worked as a Web Development Intern at Mission Australia. I built the initial versions of the <a href="https://ekinbukulmez.github.io/NoWrongDoor/" target="_blank">No Wrong Door</a>
-                        website, which allows for users to browse through help resources based on the users' age, needs, and suburb of choice. 
-                        The website is built entirely out of HTML, CSS, and JavaScript, as it was meant to be a static website.
-                        I am still working on the website to get it ready for official testing on a Volunteer developer basis.
-                        I am currently focusing on rebuilding the website with Vue.js for efficiency and speed.
-                    </p>
-                    <br>
-                    <h2>Technical Skills</h2>
-                    <h3>Programming Languages</h3>
-                    <ul>
-                        <li><i style="color: red;" class="fab fa-html5 fa-7x"></i></li>
-                        <li><i style="color: blue;" class="fab fa-css3-alt fa-7x"></i></li>
-                        <li><i style="color: yellow;" class="fab fa-js-square fa-7x"></i></li>
-                        <li><i style="color: navy" class="fab fa-python fa-7x"></i></li>
-                        <li><i style="color: orange;" class="fab fa-java fa-7x"></i></li>
-                        <li><img src="assets/img/c.png"></li>
-                        <li><img src="assets/img/cpp.png"></li>
-                        <li><img src="assets/img/sql.png"></li>
-                    </ul>
-                    <h3>Frameworks</h3>
-                    <ul>
-                        <li><img src="https://img.icons8.com/color/150/000000/bootstrap.png"></li>
-                        <li><i class="fab fa-vuejs fa-7x" style="color: #35495e;"></i></li>
-                    </ul>
-                    <h3>Software</h3>
-                    <ul>
-                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> Git</li>
-                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> VMWare</li>
-                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> MySQL</li>
-                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> Eclipse</li>
-                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> Visual Studio Code</li>
-                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> Microsoft Office</li>
-                    </ul>
-                    <h3>Operating Systems</h3>
-                    <ul>
-                        <li><i style="color: lightskyblue;" class="fab fa-windows fa-7x"></i></li>
-                        <li><i style="color: black;" class="fab fa-linux fa-7x"></i></li>
-                        <li><i style= "color: grey;" class="fab fa-apple fa-7x"></i></li>
-                    </ul>
-                    <h2>Interpersonal Skills</h2>
-                    <ul id="inter">
-                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> Teaching: I have been a programming tutor for a 12-year-old student. Since July 2018, and hence have been developing my teaching skills.</li>
-                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> Problem Solving: Being a Computer Science student has taught me many essential problem solving skills, most important of which is retaining patience.</li>
-                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> Public Speaking: While studying Business for two years, I learned essential presentation and public speaking skills through my coursework.</li>
-                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> Relationship Building: I worked as a Residential Advisor during my time in the US. This job required me to make sure that the students living in Residential Colleges were well-integrated into university culture through relationship-building events and activities that I organized.</li>
-                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> Teamwork: As a university student studying in two different countries, I was able to work in teams comprised of individuals of many different backgrounds.</li>
-                    </ul>
-                    <h4>For additional information, view my full resume <a href="Resume.md.html">here!</a> 📝</h4>
-                </div>    
-            </div>
-        <hr>
-        <div id="non-prof" class="container">
-            <h1>What Else?</h1>
-            <div id="non-prof-inner" class="container">
-            <h3>I Also Know Some Human Languages:</h3>
-                    <ul>
-                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> Turkish as my Native Language</li>
-                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> Fluent English</li>
-                        <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> Intermediate French</li>
-                    </ul>
-                <br>
-            </div>
-        </div>
-    </div>
-    <footer class="container-fluid" style="background-color: #731DD8;">
-        <h3>Thank you for visiting! 😊</h3>
-        <p>Feel free to checkout any of my social media links below! 💖</p>
-        <p>&copy; Style by Ekin Bukulmez 🎨</p> 
-        <p>Image overlay effect from <a href="https://miketricking.github.io/bootstrap-image-hover/" target="_blank">here 👩‍💻</a></p>
-    </footer> 
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
+    <script>
+        new Vue({ 
+            el: '#app', 
+            data: () => {
+                return {
+                    items: [
+                        {
+                            color: '#4F518C',
+                            icon: 'work',
+                            title: 'Software Developer at Mote Net',
+                            text: `I am currently working at Mote Net, a Perth-based start-up that is developing smart farm technologies
+                                    for Western Australian farmers. I work as a web developer, crafting the user-friendly Mote Net dashboard, which
+                                    displays farm for the user to utilise. `,
+                            link: 'https://mote.net.au/'
+                        },
+                        {
+                            color: '#907AD6',
+                            icon: 'computer',
+                            title: 'Web Development Intern at Mission Australia',
+                            text: ``,
+                        },
+                        {
+                            color: '#2C2A4A',
+                            icon: 'school',
+                            title: 'Computer Science, BS, at University of Western Australia',
+                            text: ``,
+                        },
+                        {
+                            color: '#DABFFF',
+                            icon: 'book',
+                            title: 'Global Business, BS, at the University of Texas at Dallas',
+                            text: ``,
+                        },
+                        
+                    ],
+                }
+            },
+        });
+    </script>
 </body>
 </html>

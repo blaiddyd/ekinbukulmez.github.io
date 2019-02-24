@@ -91,9 +91,9 @@ body {
 }
 
 
-#intro h1, #non-prof h1 {
+h1 {
     font-family: 'Pattaya', sans-serif;
-    color: #C1666B;
+    color: black;
 
 }
 
@@ -101,7 +101,7 @@ body {
     color: #731DD8;
 }
 
-#content h3 {
+h4 {
     color: #48A9A6;
 }
     
