@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css"/>
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Infant|Pattaya|Prociono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Convergence" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css" rel="stylesheet">
+    <link rel="icon" href="/assets/img/favicon.ico" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
@@ -58,8 +60,10 @@
                                 <v-layout>
                                     <v-btn
                                         :href="item.link"
+                                        v-if="item.button"
+                                        width="30%"
                                     >
-                                        {{ item.button }}
+                                        {{ item.buttonText }}
                                     </v-btn>
                                 </v-layout>
                             </v-card-actions>
@@ -78,6 +82,7 @@
             flat
             tile
             class="black--text text-xs-center flex"
+            color="#4F518C"
         >
             <v-card-text>
                 <v-btn
@@ -93,13 +98,13 @@
                 </v-btn>
             </v-card-text> 
             
-            <v-card-text>
+            <v-card-text class="white--text">
                 Thank you so much for visiting! Feel free to check out my social media links above!
             </v-card-text>
 
             <v-divider></v-divider>
 
-            <v-card-text>
+            <v-card-text class="white--text">
                 Made with 💝 by Ekin Bukulmez
             </v-card-text>
         </v-card>
@@ -107,60 +112,14 @@
 
        </v-footer>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
+    <script src="assets/js/main.js"></script>
     <script>
-        new Vue({ 
-            el: '#app', 
-            data: () => {
-                return {
-                    icons: [
-                        { img: 'fab fa-github', to: 'https://github.com/ekinbukulmez' },
-                        { img: 'fab fa-linkedin', to: 'https://www.linkedin.com/in/ekinbukulmez/' },
-                        { img: 'fas fa-envelope-square', to: 'mailto:22412569@student.uwa.edu.au' },
-                    ],
-                    items: [
-                        {
-                            color: '#4F518C',
-                            icon: 'work',
-                            title: 'Software Developer at Mote Net',
-                            date: '2 January 2019 - Present',
-                            text: `I am currently working at Mote Net, a Perth-based start-up that is developing smart farm technologies
-                                    for Western Australian farmers. I am currently developing the user-friendly Mote Net dashboard, which
-                                    displays farm for the user to utilise. `,
-                            button: 'Learn More',
-                            link: 'https://mote.net.au/'
-                        },
-                        {
-                            color: '#2C2A4A',
-                            icon: 'computer',
-                            title: 'Web Development Intern at Mission Australia',
-                            date: '14 March 2018 - Present',
-                            text: `I worked on the early version of the No Wrong Door project, which enabled users to browse through 
-                                    non-profit resources in Western Australia based on their suburb, age, and area of need. I am currently working on a second version of the website using Vue.js
-                                    for improved perfromance.`,
-                            button: 'VERSION I',
-                            link: 'https://www.ekinbukulmez.me/NoWrongDoor'
-                        },
-                        {
-                            color: '#907AD6',
-                            icon: 'school',
-                            date: '27 February 2018 - December 2019',
-                            title: 'Computer Science, BS, at University of Western Australia',
-                            text: ``,
-                        },
-                        {
-                            color: '#372549',
-                            icon: 'book',
-                            title: 'Global Business, BS, at the University of Texas at Dallas',
-                            date: 'August 2015 - November 2017',
-                            text: ``,
-                        },
-                        
-                    ],
-                }
-            },
-        });
+        //GitHubCalendar(".calendar", "ekinbukulmez", { responsive: true });
+        
+        
     </script>
 </body>
 </html>
