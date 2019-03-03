@@ -6,6 +6,7 @@ new Vue({
                 { img: 'fab fa-github', to: 'https://github.com/ekinbukulmez' },
                 { img: 'fab fa-linkedin', to: 'https://www.linkedin.com/in/ekinbukulmez/' },
                 { img: 'fas fa-envelope-square', to: 'mailto:22412569@student.uwa.edu.au' },
+                { img: 'fab fa-instagram', to: 'https://www.instagram.com/ekin.exe/' },
             ],
             items: [
                 {
@@ -19,6 +20,10 @@ new Vue({
                     buttonText: 'Learn More',
                     link: 'https://mote.net.au/',
                     button: true,
+                },
+                {
+                    color: '#5E35B1',
+                    icon: 'fas fa-chalkboard-teacher'
                 },
                 {
                     color: '#2C2A4A',
@@ -50,6 +55,16 @@ new Vue({
                 },
                 
             ],
+            images: [
+                'https://cdn-images-1.medium.com/max/1280/1*QIg6vEjZmT5YMVKU5Rxr2A.png',
+                'https://firebase.google.com/images/social.png',
+                'https://www.geeksread.com/wp-content/uploads/2018/05/What-is-nodeJS-what-we-can-do-with-nodeJS.jpg',
+                'https://c10.patreonusercontent.com/3/eyJ3IjoxOTIwfQ%3D%3D/patreon-media/p/campaign/941215/7d3ad801c44a4a59a0f90e72b99ef58f/2?token-time=2145916800&token-hash=Nj3wnHnyVXx2tlV5eahIX2rwaVkryunlNFAdvmVHS58%3D',
+                'http://wallsdesk.com/wp-content/uploads/2017/01/Elon-Musk-Background-.jpeg',
+                'http://images6.fanpop.com/image/photos/41300000/BTS-bts-41399222-2000-1333.jpg',
+                'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/262ece3f-c877-4971-96fc-f736847d70be/d73oy5d-096b0942-9e5a-41ea-91fa-8b69b7b3fa88.jpg/v1/fill/w_1192,h_670,q_70,strp/jojo_s_bizarre_adventure_wallpaper_by_franky4fingersx2_d73oy5d-pre.jpg',
+                'https://i.pinimg.com/originals/ab/1e/82/ab1e8231b32f4b88b4a9c96532b95749.jpg',
+            ]
         }
     },
 });

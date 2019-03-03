@@ -31,8 +31,48 @@
         </v-parallax>
 
         <v-container>
+            <h1>
+                About Me
+            </h1>
+
+        </v-container>
+
+        <v-divider></v-divider>
+
+        <v-container>
+                <h1>
+                    My Projects
+                </h1>
+                <v-card class="mt-1 pa-2"
+                    style="border-radius: 15px;"
+                >
+                    <v-card-title primary
+                        class="mx-auto"
+                    >
+                            Mote Net Smart Farm Dashboard
+                    </v-card-title>
+    
+                    <v-img src="assets/img/motenet.PNG" />
+                    
+                </v-card>
+    
+                <v-card class="mt-2 pa-2"
+                    style="border-radius: 15px;"
+                >
+                    <v-card-title primary>
+                        No Wrong Door
+                    </v-card-title>
+
+                    <v-img src="assets/img/nwd.PNG" />
+    
+                </v-card>
+        </v-container>
+
+        <v-divider></v-divider>
+
+        <v-container>
             <div id="timeline">
-                <h1>My Work</h1>
+                <h1>My History</h1>
                 <v-timeline align-top>
                     <v-timeline-item
                         v-for="item in items"
@@ -45,6 +85,8 @@
                             :color="item.color"
                             dark
                             hover
+                            style="border-radius: 10px;"
+                            class="pb-1"
                         >
                             <v-card-title class="title">
                                 {{ item.title }}
@@ -70,8 +112,32 @@
                         </v-card> 
                     </v-timeline-item>
                 </v-timeline>
-
             </div>
+        </v-container>
+
+        <v-divider></v-divider>
+
+        <v-container>
+            <h1>
+                Things I like
+            </h1>
+           
+            <v-carousel
+                delimiter-icon="fas fa-heart"
+                prev-icon="arrow_back"
+                next-icon="arrow_forward"
+                cycle
+                style="border-radius: 15px;"
+            >
+                <v-carousel-item
+                    v-for="(img, i) in images"
+                    :key="i"
+                    :src="img"
+                >
+
+                </v-carousel-item>
+
+            </v-carousel>
         </v-container>
     
        <v-footer
@@ -116,10 +182,5 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
     <script src="assets/js/main.js"></script>
-    <script>
-        //GitHubCalendar(".calendar", "ekinbukulmez", { responsive: true });
-        
-        
-    </script>
 </body>
 </html>
