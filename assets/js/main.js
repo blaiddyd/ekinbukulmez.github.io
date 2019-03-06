@@ -23,7 +23,15 @@ new Vue({
                 },
                 {
                     color: '#5E35B1',
-                    icon: 'fas fa-chalkboard-teacher'
+                    icon: 'fas fa-chalkboard-teacher',
+                    title: 'Programmung Tutor',
+                    date: 'July 2018 - Present',
+                    text: `I work as a programming tutor every week, teaching the fundamentals of web development and basic algorithms. 
+                            I am also able to tutor in Python, C, C++ and Java. If you or someone you know in Perth area is interested in getting tutored in 
+                            programming, contact me through one of my social media links!`,
+                    buttonText: 'Contact Me',
+                    link: '#footer',
+                    button: true,
                 },
                 {
                     color: '#2C2A4A',
@@ -42,7 +50,9 @@ new Vue({
                     icon: 'school',
                     date: '27 February 2018 - December 2019',
                     title: 'Computer Science, BS, at University of Western Australia',
-                    text: ``,
+                    text: `I am currently a third-year Computer Science major at UWA. I spend most of my time there working as the Secretary of
+                            Coders for Causes, which is a student organization that builds software for non-profit organizations, and teaches
+                            students professional programming skills.`,
                     button: false,
                 },
                 {
