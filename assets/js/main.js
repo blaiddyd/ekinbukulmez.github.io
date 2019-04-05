@@ -16,7 +16,7 @@ new Vue({
                     date: '2 January 2019 - Present',
                     text: `I am currently working at Mote Net, a Perth-based start-up that is developing smart farm technologies
                             for Western Australian farmers. I am currently developing the user-friendly Mote Net dashboard, which
-                            displays farm for the user to utilise. `,
+                            displays farm information for the user to utilise. `,
                     buttonText: 'Learn More',
                     link: 'https://mote.net.au/',
                     button: true,
